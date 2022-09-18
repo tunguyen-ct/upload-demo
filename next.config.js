@@ -2,6 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    domains: ["storage.googleapis.com"],
+    unoptimized: process.env.NODE_ENV === "development"
+  }
 }
 
 module.exports = nextConfig
